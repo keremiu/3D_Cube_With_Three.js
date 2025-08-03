@@ -352,8 +352,8 @@ class CubeConfigurator {
             moduleDimensions.depth
         );
 
-        // her modüle farklı renk ver
-        const colors = [0x4a90e2, 0x50c878, 0xff6b6b, 0xffd700, 0x9370db, 0xff8c00];
+        // her modüle farklı renk ver (kırmızı hariç - seçim için ayrılmış)
+        const colors = [0x4a90e2, 0x50c878, 0xffd700, 0x9370db, 0xff8c00, 0x20b2aa];
         const material = new THREE.MeshPhongMaterial({
             color: colors[this.modules.length % colors.length],
             transparent: true,
@@ -501,7 +501,7 @@ class CubeConfigurator {
         this.updateSliderValues();
 
         // seçili modülü kırmızı yap, diğerleri normal renk
-        const colors = [0x4a90e2, 0x50c878, 0xff6b6b, 0xffd700, 0x9370db, 0xff8c00];
+        const colors = [0x4a90e2, 0x50c878, 0xffd700, 0x9370db, 0xff8c00, 0x20b2aa];
         this.modules.forEach((module, i) => {
             if (i === index) {
                 module.mesh.material.color.setHex(0xff6b6b);
