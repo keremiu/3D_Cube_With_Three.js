@@ -10,7 +10,7 @@
 - **Kamera Kontrolü**: Mouse ile döndürme, yakınlaştırma
 - **Sürüklenebilir Güneş**: Işık yönünü değiştirme
 - **Gerçek Zamanlı Gölgeler**: Dinamik gölge hesaplaması
-- ** Mobil Uyumlu**: Touch kontrolleri ve responsive tasarım
+- **Mobil Uyumlu**: Touch kontrolleri ve responsive tasarım
 
 ## 🔍 Önemli Notlar
 
@@ -18,8 +18,8 @@
 - **Güneş Pozisyonu**: Güneş ne kadar yüksekte olursa olsun, gölge derinliği objenin boyutuna göre değişmez
 - **Gölge Amacı**: Gölge sistemi sadece objelerin nasıl durduğunu görsel olarak göstermek için yapılmıştır
 - **Obje Gölgeleri**: Güneşin önünde bir obje varsa, onun büyüklüğüne göre diğer modüllerde gölge oluşabilir
-- **Güneş Görünürlüğü**: Cismin üstüne yaklaştırdığınızda güneşi daha net görebilirsiniz
-- **Fiziksel Gerçeklik**: Gerçek fizik simülasyonu değil, görsel referans amaçlıdır
+- **Güneş Görünürlüğü**: Cismin üstüne yaklaştırdığınızda güneşin yansımasını görebilirsiniz
+
 
 
 ### Modül Sistemi Mantığı  
@@ -61,20 +61,6 @@ npm run dev
 - **Modül seçimi**: Listeden modül adına tıklayın
 - **Boyut ayarlama**: Her modülü ayrı ayrı boyutlandırın
 - **Ekleme/Silme**: Butonlarla manuel modül yönetimi
-
-## 📱 Mobil Uyumluluk
-
-### Responsive Tasarım
-- **Otomatik Uyarlama**: Ekran boyutuna göre arayüz düzenlenir
-- **Touch Kontrolleri**: Parmak hareketleriyle 3D sahne kontrolü
-- **Hamburger Menü**: Mobilde kontrol paneli gizlenebilir (☰ butonu)
-- **Optimize Performans**: Mobil cihazlar için pixel ratio optimizasyonu
-
-### Mobil Özellikler
-- **Touch Sürükleme**: Güneşi parmakla sürükleyebilirsiniz
-- **Responsive Butonlar**: Mobil dokunuş için optimize edilmiş buton boyutları
-- **Esnek Panel**: Kontrol paneli ekranın %50'sini geçmez
-- **Hızlı Erişim**: Panel dışına dokunarak kontrolleri gizleyebilirsiniz
 
 ## Live Demo
 **[Canlı Demo Url →](https://sprightly-heliotrope-bc8e06.netlify.app/)**
