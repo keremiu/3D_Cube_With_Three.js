@@ -31,6 +31,6 @@ Three.js ile yapılmış 3D küp tasarım programı.
 - **Ekleme/Silme**: Butonlarla manuel modül yönetimi
 
 ## Live Demo
-**URL**: `sprightly-heliotrope-bc8e06.netlify.app`
+**[Canlı Demo Url →](https://3d-cube-with-threejs.netlify.app)**
 
 
