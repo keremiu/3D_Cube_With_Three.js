@@ -2,6 +2,11 @@
 
 Three.js ile yapılmış 3D küp tasarım programı.
 
+## 🚀 Live Demo
+**[Canlı Demo'yu Deneyin →](https://3d-cube-with-threejs.netlify.app)**
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/your-site-id/deploy-status)](https://app.netlify.com/sites/3d-cube-with-threejs/deploys)
+
 ## Geliştirici
 
 **Kerem İhsan Ulaşan**

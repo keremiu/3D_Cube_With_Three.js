@@ -2,7 +2,7 @@
  * 3D Cube Configurator
  * Interactive Three.js application with modular cube system
  * 
- * 🚀 Live Demo: [Deploy sonrası buraya eklenecek]
+ * 🚀 Live Demo: https://3d-cube-with-threejs.netlify.app
  * 🛠️ Developer: Kerem İhsan Ulaşan
  */
 
