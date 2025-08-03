@@ -14,18 +14,42 @@
 ## 🔍 Önemli Notlar
 
 ### Gölge Sistemi Hakkında
-- **Güneş Pozisyonu**: Sarı küp (güneş) ne kadar yüksekte olursa olsun, gölge derinliği objenin boyutuna göre değişmez
+- **Güneş Pozisyonu**: güneş ne kadar yüksekte olursa olsun, gölge derinliği objenin boyutuna göre değişmez
 - **Gölge Amacı**: Gölge sistemi sadece objelerin nasıl durduğunu görsel olarak göstermek için yapılmıştır
-- **Fiziksel Gerçeklik**: Gerçek fizik simülasyonu değil, görsel referans amaçlıdır
+
 
 ### Modül Sistemi Mantığı  
 - **Tek Ekleme**: Soruyu "sadece 1 tane extra model oluştur" şeklinde anladığım için bu şekilde tasarlandı
 - **60cm Kuralı**: İlk modül 60cm'yi geçtiğinde otomatik olarak sadece 1 adet ikinci modül eklenir
 - **Manuel Ekleme**: Daha fazla modül için "Add Module" butonu kullanılabilir
 
+## 🚀 Nasıl Çalıştırılır
+
+### Hızlı Başlangıç
+```bash
+# 1. Projeyi klonla
+git clone https://github.com/keremiu/3D_Cube_With_Three.js.git
+cd 3D_Cube_With_Three.js
+
+# 2. Paketleri yükle
+npm install
+
+# 3. Geliştirme sunucusunu başlat
+npm run dev
+```
+
 ### Gereksinimler
    - Node.js (v16 veya üzeri)
    - npm paket yöneticisi
+
+### Diğer Komutlar
+```bash
+# Production build
+npm run build
+
+# Build'i önizle
+npm run preview
+```
 
 ### Temel Kontroller
 - **Fare ile kamera**: 
