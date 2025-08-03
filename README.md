@@ -26,7 +26,7 @@
 - **Tek Ekleme**: Soruyu "sadece 1 tane extra model oluştur" şeklinde anladığım için bu şekilde tasarlandı
 - **60cm Kuralı**: İlk modül 60cm'yi geçtiğinde otomatik olarak sadece 1 adet ikinci modül eklenir
 - **Manuel Ekleme**: Daha fazla modül için "Add Module" butonu kullanılabilir
-- **Manuel Ekleme Özelliği**: "Add Module" ile manuel olarak eklenen modüllerde, 60cm'yi aşsa bile yeni küp otomatik oluşmaz
+- **Manuel Ekleme Özelliği**: "Add Module" ile manuel olarak ekleneme yapıldığı zaman , 60cm'yi aşsa bile yeni küp otomatik oluşmaz
 
 ##  Nasıl Çalıştırılır
 
