@@ -56,6 +56,10 @@ class CubeConfigurator {
         this.renderer.setSize(window.innerWidth, window.innerHeight);
         this.renderer.shadowMap.enabled = true;
         this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+        
+        // Mobil optimizasyon
+        const pixelRatio = Math.min(window.devicePixelRatio, 2);
+        this.renderer.setPixelRatio(pixelRatio);
     }
 
     setupControls() {
@@ -200,6 +204,48 @@ class CubeConfigurator {
         canvas.addEventListener('mouseup', (event) => {
             this.onMouseUp(event);
         });
+
+        // Touch eventleri mobil icin
+        canvas.addEventListener('touchstart', (event) => {
+            this.onTouchStart(event);
+        }, { passive: false });
+        
+        canvas.addEventListener('touchmove', (event) => {
+            this.onTouchMove(event);
+        }, { passive: false });
+        
+        canvas.addEventListener('touchend', (event) => {
+            this.onTouchEnd(event);
+        }, { passive: false });
+    }
+
+    // Touch eventleri
+    onTouchStart(event) {
+        event.preventDefault();
+        if (event.touches.length === 1) {
+            const touch = event.touches[0];
+            this.onMouseDown({
+                clientX: touch.clientX,
+                clientY: touch.clientY,
+                preventDefault: () => {}
+            });
+        }
+    }
+
+    onTouchMove(event) {
+        event.preventDefault();
+        if (event.touches.length === 1) {
+            const touch = event.touches[0];
+            this.onMouseMove({
+                clientX: touch.clientX,
+                clientY: touch.clientY
+            });
+        }
+    }
+
+    onTouchEnd(event) {
+        event.preventDefault();
+        this.onMouseUp({});
     }
 
     onMouseDown(event) {
@@ -507,6 +553,32 @@ class CubeConfigurator {
                 this.deleteSelectedModule();
             });
         }
+
+        // Mobil toggle setup
+        this.setupMobileToggle();
+    }
+
+    // Mobil kontrol paneli toggle
+    setupMobileToggle() {
+        const toggleBtn = document.getElementById('toggle-controls');
+        const controlsPanel = document.getElementById('controls');
+
+        if (toggleBtn && controlsPanel) {
+            toggleBtn.addEventListener('click', () => {
+                controlsPanel.classList.toggle('show');
+                toggleBtn.textContent = controlsPanel.classList.contains('show') ? '✕' : '☰';
+            });
+
+            // Panel disinda tiklandiginda kapat
+            document.addEventListener('click', (event) => {
+                if (window.innerWidth <= 768) {
+                    if (!controlsPanel.contains(event.target) && !toggleBtn.contains(event.target)) {
+                        controlsPanel.classList.remove('show');
+                        toggleBtn.textContent = '☰';
+                    }
+                }
+            });
+        }
     }
 
     deleteSelectedModule() {
@@ -568,6 +640,10 @@ class CubeConfigurator {
         this.camera.aspect = window.innerWidth / window.innerHeight;
         this.camera.updateProjectionMatrix();
         this.renderer.setSize(window.innerWidth, window.innerHeight);
+        
+        // Mobil cihazlarda pixel ratio ayarla
+        const pixelRatio = Math.min(window.devicePixelRatio, 2);
+        this.renderer.setPixelRatio(pixelRatio);
     }
 
     animate() {
