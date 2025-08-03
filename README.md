@@ -23,7 +23,7 @@
 - **60cm Kuralı**: İlk modül 60cm'yi geçtiğinde otomatik olarak sadece 1 adet ikinci modül eklenir
 - **Manuel Ekleme**: Daha fazla modül için "Add Module" butonu kullanılabilir
 
-## 🚀 Nasıl Çalıştırılır
+##  Nasıl Çalıştırılır
 
 ### Hızlı Başlangıç
 ```bash
@@ -42,14 +42,6 @@ npm run dev
    - Node.js (v16 veya üzeri)
    - npm paket yöneticisi
 
-### Diğer Komutlar
-```bash
-# Production build
-npm run build
-
-# Build'i önizle
-npm run preview
-```
 
 ### Temel Kontroller
 - **Fare ile kamera**: 
