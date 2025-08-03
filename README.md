@@ -7,7 +7,7 @@ Three.js ile yapılmış 3D küp tasarım programı.
 **Kerem İhsan Ulaşan**
 
 
-1. **Gereksinimler**
+### Gereksinimler
    - Node.js (v16 veya üzeri)
    - npm paket yöneticisi
 
@@ -26,6 +26,6 @@ Three.js ile yapılmış 3D küp tasarım programı.
 - **Ekleme/Silme**: Butonlarla manuel modül yönetimi
 
 ## Live Demo
-**URL**: `[Deploy sonrası buraya eklenecek]`
+**URL**: `sprightly-heliotrope-bc8e06.netlify.app`
 
 
