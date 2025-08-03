@@ -1,10 +1,3 @@
-/**
- * 3D Cube Configurator
- * Interactive Three.js application with modular cube system
- * 
- * 🚀 Live Demo: https://3d-cube-with-threejs.netlify.app
- * 🛠️ Developer: Kerem İhsan Ulaşan
- */
 
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
